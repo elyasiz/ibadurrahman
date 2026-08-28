@@ -18,20 +18,20 @@ export function Hero() {
             <Link className="button button-secondary" href={hero.secondaryCTA.href}>{hero.secondaryCTA.label}<span aria-hidden="true">↘</span></Link>
           </div>
         </div>
-        <div className="hero-visual" aria-label="Kehidupan belajar santri">
+        <div className="hero-visual" aria-label="Kegiatan belajar peserta didik Ibadurrahman">
           <div className="hero-image-placeholder">
-            <Image src={hero.image} alt="Santri Ibadurrahman belajar bersama pendamping" fill priority sizes="(max-width: 760px) 90vw, 42vw" />
+            <Image src={hero.image} alt="Peserta didik Ibadurrahman belajar bersama pendamping" fill priority sizes="(max-width: 760px) 90vw, 42vw" />
             <div className="hero-image-shade" />
-            <p>Belajar · Bertumbuh · Mengabdi</p>
+            <p>Belajar · Bertumbuh · Berkarya</p>
           </div>
           <div className="floating-note">
-            <strong>Ilmu &amp; Adab</strong>
-            <span>Untuk masa depan yang bermakna</span>
+            <strong>RA hingga SMA</strong>
+            <span>Satu perjalanan pendidikan</span>
           </div>
         </div>
       </div>
       <div className="hero-marquee" aria-hidden="true">
-        <div>TAHFIZ · ADAB · AKADEMIK · KEMANDIRIAN · UKHUWAH · TAHFIZ · ADAB · AKADEMIK · KEMANDIRIAN ·</div>
+        <div>RA · SDI · SMP PLUS · SMA · ILMU · ADAB · KEMANDIRIAN · RA · SDI · SMP PLUS · SMA ·</div>
       </div>
     </section>
   );

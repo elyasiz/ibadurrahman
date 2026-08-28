@@ -4,7 +4,7 @@ import { ProgramCard } from '@/components/cards/ProgramCard';
 import { programs } from '@/content/programs';
 import { pagesContent } from '@/content/pages';
 
-export const metadata: Metadata = { title: 'Program | Pondok Pesantren Ibadurrahman', description: 'Jelajahi program Tahfiz Al-Qur’an, Madrasah Diniyah, dan pengembangan santri.' };
+export const metadata: Metadata = { title: 'Program Pendidikan | Yayasan Ibadurrahman', description: 'Jelajahi program pendukung keislaman, akademik, karakter, dan kecakapan hidup Ibadurrahman.' };
 
 export default function ProgramsPage() {
   const active = programs.filter((item) => item.active);

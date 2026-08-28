@@ -18,20 +18,18 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url),
-  title: 'Pondok Pesantren Ibadurrahman | Ilmu, Adab, Kemandirian',
-  description: 'Pondok Pesantren Ibadurrahman di Kota Tangerang—mendampingi santri bertumbuh dalam ilmu, adab, dan kemandirian.',
+  title: 'Yayasan Ibadurrahman | RA, SDI, SMP Plus, dan SMA',
+  description: 'Website resmi Yayasan Ibadurrahman di Kota Tangerang yang menaungi RA Ibadurrahman, SDI Ibadurrahman, SMP Plus Ibadurrahman, dan SMA Ibadurrahman.',
   openGraph: {
-    title: 'Pondok Pesantren Ibadurrahman',
-    description: 'Menumbuhkan ilmu, adab, dan kemandirian.',
+    title: 'Yayasan Ibadurrahman',
+    description: 'Pendidikan Islami dari RA, SDI, SMP Plus, hingga SMA.',
     type: 'website',
     locale: 'id_ID',
-    images: [{ url: '/og.png', width: 1536, height: 864, alt: 'Pondok Pesantren Ibadurrahman — Ilmu, Adab, Kemandirian' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pondok Pesantren Ibadurrahman',
-    description: 'Menumbuhkan ilmu, adab, dan kemandirian.',
-    images: ['/og.png'],
+    title: 'Yayasan Ibadurrahman',
+    description: 'Pendidikan Islami dari RA, SDI, SMP Plus, hingga SMA.',
   },
   icons: { icon: '/assets/logo/ibadurrahman-logo.jpeg' },
 };

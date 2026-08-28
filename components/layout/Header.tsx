@@ -26,11 +26,11 @@ export function Header() {
   return (
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
       <div className="container header-inner">
-        <Link className="brand" href="/" aria-label="Beranda Ibadurrahman">
-          <Image src={siteConfig.brand.logo} alt="Logo Pondok Pesantren Ibadurrahman" width={62} height={62} priority />
+        <Link className="brand" href="/" aria-label="Beranda Yayasan Ibadurrahman">
+          <Image src={siteConfig.brand.logo} alt="Logo Yayasan Ibadurrahman" width={62} height={62} priority />
           <span>
             <strong>{siteConfig.brand.shortName}</strong>
-            <small>Pondok Pesantren</small>
+            <small>Yayasan Pendidikan</small>
           </span>
         </Link>
 

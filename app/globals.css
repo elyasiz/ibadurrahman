@@ -114,6 +114,21 @@ h1 { max-width: 800px; margin: 0; font-family: var(--font-display), Georgia, ser
 .cta-inner .button { background: var(--color-primary-deep); }
 
 .programs-section { background: var(--color-surface); }
+.units-section { background: var(--color-primary-deep); color: white; }
+.units-section .section-eyebrow { color: var(--color-accent); }
+.units-section .section-header > p:last-child { color: rgb(255 255 255 / 68%); }
+.units-section .text-link { color: var(--color-accent); }
+.units-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.unit-card { display: grid; grid-template-columns: .84fr 1fr; min-height: 390px; overflow: hidden; border: 1px solid rgb(255 255 255 / 14%); border-radius: var(--radius-card); background: rgb(255 255 255 / 7%); }
+.unit-card-image { position: relative; min-height: 100%; overflow: hidden; background: #123; }
+.unit-card-image img { object-fit: cover; transition: transform .55s ease; }
+.unit-card:hover .unit-card-image img { transform: scale(1.05); }
+.unit-card-image > span { position: absolute; left: 18px; top: 18px; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--color-accent); color: var(--color-primary-deep); font-size: 11px; font-weight: 800; }
+.unit-card-body { display: flex; flex-direction: column; align-items: flex-start; padding: 34px; }
+.unit-card .card-eyebrow { color: var(--color-accent); }
+.unit-card h3 { margin: 15px 0; font-family: var(--font-display), Georgia, serif; font-size: clamp(31px, 3vw, 43px); font-weight: 520; line-height: 1.08; }
+.unit-card-body > p:not(.card-eyebrow) { margin: 0; color: rgb(255 255 255 / 68%); line-height: 1.65; }
+.unit-card .text-link { margin-top: auto; padding-top: 28px; }
 .programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .program-card { overflow: hidden; border: 1px solid #e1ded3; border-radius: var(--radius-card); background: white; }
 .program-card-image { position: relative; aspect-ratio: 1.18; overflow: hidden; background: var(--color-paper); }
@@ -172,6 +187,32 @@ h1 { max-width: 800px; margin: 0; font-family: var(--font-display), Georgia, ser
 .inner-page { min-height: 100vh; padding-top: 124px; background: var(--color-surface); }
 .inner-hero { padding: 100px 0 80px; background: var(--color-primary-deep); color: white; }.inner-hero .section-eyebrow { color: var(--color-accent); }.inner-hero h1 { max-width: 900px; font-size: clamp(48px, 7vw, 88px); }.inner-hero > .container > p:last-child { max-width: 720px; margin: 24px 0 0; color: rgb(255 255 255 / 72%); font-size: 19px; line-height: 1.7; }
 .listing-section { background: var(--color-surface); }.listing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }.listing-grid-campuses { grid-template-columns: repeat(2, 1fr); }.detail-intro { display: grid; grid-template-columns: 1fr .8fr; gap: 90px; }.detail-intro h2 { margin: 0; font-family: var(--font-display), Georgia, serif; font-size: clamp(38px, 5vw, 62px); font-weight: 510; line-height: 1.08; }.detail-intro p { margin: 0; color: var(--color-muted); font-size: 17px; line-height: 1.75; }.feature-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 38px; }.feature-list li { padding: 19px; border-radius: 16px; background: var(--color-paper); list-style: none; font-weight: 650; }.detail-image { position: relative; min-height: 580px; overflow: hidden; border-radius: 30px; }.detail-image img { object-fit: cover; }
+.simple-list { display: grid; gap: 11px; margin: 18px 0 0; padding: 0; }
+.simple-list li { display: flex; align-items: center; gap: 10px; color: var(--color-muted); list-style: none; }
+.simple-list li::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--color-accent); box-shadow: 0 0 0 4px rgb(255 221 40 / 22%); }
+.admission-units { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 60px; margin-bottom: 60px; }
+.admission-units h2, .contact-location h2, .whatsapp-heading h2 { margin: 0; font-family: var(--font-display), Georgia, serif; font-size: clamp(38px, 5vw, 62px); font-weight: 510; line-height: 1.08; }
+.admission-unit-links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.admission-unit-links a { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 68px; padding: 16px 18px; border-radius: 16px; background: white; color: var(--color-primary-deep); font-weight: 760; }
+.admission-unit-links a:hover { background: var(--color-accent); }
+.admission-steps { grid-template-columns: repeat(3, 1fr); }
+.contact-location { text-align: center; }
+.contact-location > p:last-child { margin: 18px 0 0; color: var(--color-muted); }
+.whatsapp-section { scroll-margin-top: 120px; }
+.whatsapp-heading { max-width: 820px; margin: 0 auto 42px; text-align: center; }
+.whatsapp-heading > p:last-child { max-width: 660px; margin: 18px auto 0; color: var(--color-muted); font-size: 17px; line-height: 1.65; }
+.whatsapp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+.whatsapp-card { display: grid; grid-template-columns: 76px 1fr; align-items: center; gap: 18px; padding: 24px; border: 1px solid #dedbd0; border-radius: 24px; background: white; box-shadow: 0 18px 55px rgb(17 39 30 / 7%); }
+.contact-avatar { position: relative; width: 76px; height: 76px; overflow: hidden; border: 4px solid var(--color-secondary); border-radius: 50%; background: var(--color-paper); }
+.contact-avatar img { object-fit: cover; transform: scale(2.75); }
+.whatsapp-card:nth-child(2) .contact-avatar img { object-fit: contain; transform: none; }
+.contact-identity { display: grid; gap: 6px; }
+.contact-identity strong { font-family: var(--font-display), Georgia, serif; font-size: 25px; font-weight: 560; }
+.contact-identity span { color: var(--color-muted); font-size: 14px; }
+.whatsapp-button { grid-column: 1 / -1; display: flex; min-height: 54px; align-items: center; justify-content: center; gap: 10px; padding: 0 20px; border-radius: 999px; background: #128c7e; color: white; font-weight: 800; transition: transform .2s ease, background .2s ease; }
+.whatsapp-button:hover { transform: translateY(-2px); background: #087568; }
+.whatsapp-button img { flex: 0 0 auto; }
+.whatsapp-section.is-compact .whatsapp-heading h2 { font-size: clamp(34px, 4vw, 52px); }
 .contact-page-grid { display: grid; grid-template-columns: .72fr 1fr; gap: 80px; }.contact-details { display: grid; gap: 20px; }.contact-details > div { display: grid; gap: 4px; padding-bottom: 19px; border-bottom: 1px solid #dedbd0; }.contact-details span { color: var(--color-muted); font-size: 11px; text-transform: uppercase; letter-spacing: .15em; }.contact-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 17px; padding: 34px; border-radius: 26px; background: var(--color-paper); }.form-field { display: grid; gap: 8px; }.form-field-full { grid-column: 1 / -1; }.form-field label { font-size: 12px; font-weight: 750; }.form-field input, .form-field textarea, .form-field select { width: 100%; min-height: 52px; padding: 13px 15px; border: 1px solid #d5d2c6; border-radius: 12px; background: white; color: var(--color-ink); font: inherit; }.form-field textarea { min-height: 140px; resize: vertical; }.form-status { grid-column: 1 / -1; padding: 14px; border-radius: 12px; background: #dff4e8; color: var(--color-primary-deep); }.contact-form .button { grid-column: 1 / -1; border: 0; cursor: pointer; }
 .empty-state { padding: 70px 25px; border: 1px dashed #c9c5b9; border-radius: 24px; text-align: center; }.empty-state h2 { font-family: var(--font-display), Georgia, serif; font-size: 36px; }
 
@@ -190,6 +231,7 @@ h1 { max-width: 800px; margin: 0; font-family: var(--font-display), Georgia, ser
   .hero { min-height: 760px; }
   .hero-visual { min-height: 440px; }
   .values-grid, .programs-grid, .listing-grid { grid-template-columns: repeat(2, 1fr); }
+  .units-grid { grid-template-columns: 1fr; }
   .program-card:last-child { grid-column: 1 / -1; }
   .footer-grid { grid-template-columns: 1.5fr repeat(2, 1fr); }.footer-links:last-child { grid-column: 2; }
 }
@@ -215,8 +257,12 @@ h1 { max-width: 800px; margin: 0; font-family: var(--font-display), Georgia, ser
   .section { padding: clamp(4.5rem, 18vw, 6rem) 0; }
   .section-heading-row { display: grid; margin-bottom: 34px; }
   .about-grid, .video-grid, .detail-intro, .contact-page-grid { grid-template-columns: 1fr; gap: 42px; }
+  .admission-units, .whatsapp-grid { grid-template-columns: 1fr; }
+  .admission-steps { grid-template-columns: 1fr; }
   .about-image-wrap { min-height: 480px; }
-  .values-grid, .programs-grid, .campuses-grid, .listing-grid, .listing-grid-campuses { grid-template-columns: 1fr; }
+  .values-grid, .programs-grid, .campuses-grid, .listing-grid, .listing-grid-campuses, .units-grid { grid-template-columns: 1fr; }
+  .unit-card { grid-template-columns: 1fr; }
+  .unit-card-image { min-height: 330px; }
   .program-card:last-child { grid-column: auto; }
   .value-card { min-height: 300px; }.value-card h3 { margin-top: 78px; }
   .program-card-body { min-height: 290px; }
@@ -232,6 +278,9 @@ h1 { max-width: 800px; margin: 0; font-family: var(--font-display), Georgia, ser
 @media (max-width: 430px) {
   .brand strong { max-width: 155px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(5, 260px); }.gallery-item-1 { grid-column: 1; grid-row: 1; }
+  .admission-unit-links { grid-template-columns: 1fr; }
+  .whatsapp-card { grid-template-columns: 68px 1fr; padding: 18px; }
+  .contact-avatar { width: 68px; height: 68px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

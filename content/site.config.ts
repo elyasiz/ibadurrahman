@@ -1,10 +1,10 @@
 export const siteConfig = {
-  url: 'https://pondok-pesantren-ibadurrahman.maker-education-grou.chatgpt.site',
+  url: 'https://ibadurrahman.vercel.app',
   brand: {
-    name: 'Pondok Pesantren Ibadurrahman',
+    name: 'Yayasan Ibadurrahman',
     shortName: 'Ibadurrahman',
     logo: '/assets/logo/ibadurrahman-logo.jpeg',
-    tagline: 'Menumbuhkan ilmu, adab, dan kemandirian',
+    tagline: 'Pendidikan Islami dari RA hingga SMA',
     colors: {
       primary: '#0a5a3a',
       secondary: '#fff3a8',
@@ -17,11 +17,24 @@ export const siteConfig = {
     },
   },
   contact: {
-    email: 'info@ibadurrahman.sch.id',
-    phone: '+62 21 0000 0000',
-    whatsapp: '6281200000000',
     address: 'Kota Tangerang, Banten',
   },
+  admissionsContacts: [
+    {
+      name: 'Qotrunada',
+      phone: '+62 851-3308-5391',
+      whatsapp: '6285133085391',
+      avatar: '/assets/contacts/qotrunada.jpg',
+      avatarPosition: '50% 65%',
+    },
+    {
+      name: 'Admin Ibadurrahman',
+      phone: '0896-7701-3192',
+      whatsapp: '6289677013192',
+      avatar: '/assets/logo/ibadurrahman-logo.jpeg',
+      avatarPosition: 'center',
+    },
+  ],
   social: {
     instagram: '#',
     facebook: '#',
@@ -34,17 +47,18 @@ export const siteConfig = {
   ],
   navigation: [
     {
-      label: 'Program',
-      href: '/programs',
+      label: 'Unit Pendidikan',
+      href: '/units',
       children: [
-        { label: 'Tahfiz Al-Qur’an', href: '/programs/tahfiz' },
-        { label: 'Madrasah Diniyah', href: '/programs/madrasah-diniyah' },
-        { label: 'Pengembangan Santri', href: '/programs/pengembangan-santri' },
+        { label: 'RA Ibadurrahman', href: '/units/ra-ibadurrahman' },
+        { label: 'SDI Ibadurrahman', href: '/units/sdi-ibadurrahman' },
+        { label: 'SMP Plus Ibadurrahman', href: '/units/smp-plus-ibadurrahman' },
+        { label: 'SMA Ibadurrahman', href: '/units/sma-ibadurrahman' },
       ],
     },
-    { label: 'Tentang Kami', href: '/about' },
-    { label: 'Kehidupan Santri', href: '/campuses' },
+    { label: 'Tentang Yayasan', href: '/about' },
+    { label: 'Program Pendidikan', href: '/programs' },
     { label: 'Galeri', href: '/gallery' },
-    { label: 'Kontak', href: '/contact' },
+    { label: 'Pendaftaran', href: '/admissions' },
   ],
 } as const;
