@@ -21,7 +21,7 @@ export const siteConfig = {
   },
   admissionsContacts: [
     {
-      name: 'Qotrunada',
+      name: 'Panitian PPDB',
       phone: '+62 851-3308-5391',
       whatsapp: '6285133085391',
       avatar: '/assets/contacts/qotrunada.jpg',
@@ -62,3 +62,4 @@ export const siteConfig = {
     { label: 'Pendaftaran', href: '/admissions' },
   ],
 } as const;
+

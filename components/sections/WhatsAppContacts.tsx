@@ -19,7 +19,7 @@ export function WhatsAppContacts({ compact = false }: { compact?: boolean }) {
             <div className="contact-avatar">
               <Image
                 src={contact.avatar}
-                alt={contact.name === 'Qotrunada' ? 'Foto Qotrunada' : 'Logo Ibadurrahman'}
+                alt={contact.name === 'Panitian PPDB' ? 'Foto Panitian PPDB' : 'Logo Ibadurrahman'}
                 fill
                 sizes="72px"
                 style={{ objectPosition: contact.avatarPosition }}
@@ -45,3 +45,4 @@ export function WhatsAppContacts({ compact = false }: { compact?: boolean }) {
     </div>
   );
 }
+

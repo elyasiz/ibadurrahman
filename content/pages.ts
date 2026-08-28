@@ -9,7 +9,7 @@ export const pagesContent = {
   campuses: { hero: { eyebrow: 'Unit Pendidikan', title: 'Empat tahap dalam satu perjalanan pendidikan.', description: 'Kenali RA, SDI, SMP Plus, dan SMA Ibadurrahman.' } },
   admissions: {
     hero: { eyebrow: 'Penerimaan Peserta Didik Baru', title: 'Temukan jenjang yang tepat untuk putra-putri Anda.', description: 'Pilih unit pendidikan dan hubungi admin kami untuk memperoleh informasi pendaftaran yang sesuai.' },
-    steps: [{ number: '01', title: 'Pilih Jenjang', text: 'Kenali RA, SDI, SMP Plus, atau SMA sesuai tahap pendidikan calon peserta didik.' }, { number: '02', title: 'Hubungi Admin', text: 'Pilih Qotrunada atau Admin Ibadurrahman dan mulai konsultasi langsung melalui WhatsApp.' }, { number: '03', title: 'Dapatkan Panduan', text: 'Admin akan membantu menjelaskan informasi dan langkah pendaftaran yang tersedia.' }],
+    steps: [{ number: '01', title: 'Pilih Jenjang', text: 'Kenali RA, SDI, SMP Plus, atau SMA sesuai tahap pendidikan calon peserta didik.' }, { number: '02', title: 'Hubungi Admin', text: 'Pilih Panitian PPDB atau Admin Ibadurrahman dan mulai konsultasi langsung melalui WhatsApp.' }, { number: '03', title: 'Dapatkan Panduan', text: 'Admin akan membantu menjelaskan informasi dan langkah pendaftaran yang tersedia.' }],
     button: { label: 'Hubungi Admin Pendaftaran', href: '#kontak-whatsapp' },
   },
   contact: { hero: { eyebrow: 'Hubungi Kami', title: 'Mari bicarakan langkah terbaik untuk putra-putri Anda.', description: 'Tim kami siap membantu menjelaskan unit pendidikan dan informasi pendaftaran melalui WhatsApp.' }, officeHours: 'Informasi waktu layanan dapat ditanyakan kepada admin.' },
@@ -19,3 +19,4 @@ export const pagesContent = {
   privacy: { hero: { eyebrow: 'Informasi', title: 'Kebijakan Privasi', description: 'Halaman ini merupakan template yang dapat disesuaikan dengan kebijakan resmi institusi.' }, title: 'Data digunakan secara bertanggung jawab.', description: 'Isi kebijakan privasi final perlu diperbarui oleh pengelola sebelum situs dipublikasikan secara luas, termasuk tujuan pengumpulan data, masa penyimpanan, dan kanal permintaan penghapusan.' },
   notFound: { eyebrow: '404 · Halaman Tidak Ditemukan', title: 'Sepertinya Anda mengambil jalan yang berbeda.', description: 'Halaman yang dicari mungkin dipindahkan atau belum tersedia.', buttonLabel: 'Kembali ke Beranda' },
 } as const;
+
